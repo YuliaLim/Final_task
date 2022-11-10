@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="time" id="timer">
+            <div class="minShow">01:</div>
+            <div class="secShow">00</div>
+        </div>
+        <div class="nav-buttons">
+            <input type="button" value="Start game!" id="start-game">
+            <input type="button" value="Check result" id="check" class="disable" disabled>
+            <input type="button" value="New game" id="new-game">
+        </div>
+        <div class="wrapper-puzzle">
+            <div class="puzzle" id="puz-start">
+                <div class="puzzls-start puzBox"></div>
+                <div class="puzzls-start puzBox"></div>
+                <div class="puzzls-start puzBox"></div>
+                <div class="puzzls-start puzBox"></div>
+                <div class="puzzls-start puzBox"></div>
+                <div class="puzzls-start puzBox"></div>
+                <div class="puzzls-start puzBox"></div>
+                <div class="puzzls-start puzBox"></div>
+                <div class="puzzls-start puzBox"></div>
+                <div class="puzzls-start puzBox"></div>
+                <div class="puzzls-start puzBox"></div>
+                <div class="puzzls-start puzBox"></div>
+                <div class="puzzls-start puzBox"></div>
+                <div class="puzzls-start puzBox"></div>
+                <div class="puzzls-start puzBox"></div>
+                <div class="puzzls-start puzBox"></div>
+            </div>
+            <div class="puzzle" id="puz-end">
+                <div class="puzzls-end"></div>
+                <div class="puzzls-end"></div>
+                <div class="puzzls-end"></div>
+                <div class="puzzls-end"></div>
+                <div class="puzzls-end"></div>
+                <div class="puzzls-end"></div>
+                <div class="puzzls-end"></div>
+                <div class="puzzls-end"></div>
+                <div class="puzzls-end"></div>
+                <div class="puzzls-end"></div>
+                <div class="puzzls-end"></div>
+                <div class="puzzls-end"></div>
+                <div class="puzzls-end"></div>
+                <div class="puzzls-end"></div>
+                <div class="puzzls-end"></div>
+                <div class="puzzls-end"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-container">
+        <div class="modal">
+            <div class="info"></div>
+            <div class="modal-buttons">
+                <input type="button" value="Close" id="btn-close">
+                <input type="button" value="Check" id="btn-check">
+            </div>
+        </div>
+    </div>
+
+    <script src="./jq.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
